@@ -4,13 +4,15 @@
   "main": "/src/index.js",
   "scripts": {
     "start": "npx react-scripts start",
-    "build": "npx react-scripts build",
-    "test": "npx react-scripts test --env=jsdom",
+    "build": "cross-env PUBLIC_URL=/tic-tac-toe react-scripts build",
+    "test": "echo test",
     "eject": "npx react-scripts eject"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@ustinian-wang/kit": "^0.1.4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "^5.0.0"
   },
   "browserslist": {
     "production": [
@@ -23,5 +25,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "jest-watch-typeahead": "0.6.3",
+    "jest-watcher": "^29.7.0"
   }
 }
