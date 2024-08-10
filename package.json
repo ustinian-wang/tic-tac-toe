@@ -5,6 +5,7 @@
   "scripts": {
     "start": "npx react-scripts start",
     "build": "npx react-scripts build",
+    "test": "echo test",
     "eject": "npx react-scripts eject"
   },
   "dependencies": {
