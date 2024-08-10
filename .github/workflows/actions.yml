@@ -1,8 +1,8 @@
-name: kit deployment
+name: tic-tac-toe
 on:
     push:
         branches:
-            - main
+            - demo
 permissions:
     contents: write
 jobs:
