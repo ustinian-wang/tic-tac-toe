@@ -46,3 +46,28 @@ ul {
     padding-inline-start: 20px;
 }
 
+
+.ma_gridTable{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border-right: #000 1px solid;
+    border-bottom: #000 1px solid;
+}
+.ma_gridTable_row{
+    display: flex;
+    width: fit-content;
+}
+.ma_gridTable_ceil{
+    width: 34px;
+    height: 34px;
+    font-size: 24px;
+    border-left: solid #000 1px;
+    border-top: solid #000 1px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    line-height: 34px;
+    text-align: center;
+    cursor: pointer;
+}
