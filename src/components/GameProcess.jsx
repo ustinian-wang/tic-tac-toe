@@ -23,8 +23,8 @@ export const GameStatusDef = {
 export function GameProcess(props){
     let roles = props.roles;
     let role = props.role;
-    let grid = props.grids;
-    let winner = getWinner(roles, grid);
+    let grids = props.grids;
+    let winner = getWinner(roles, grids);
 
     if(winner){
         return (

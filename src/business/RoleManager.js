@@ -1,10 +1,12 @@
 import { Role, RoleTypeDef } from "./Role";
 class RoleManagerFactor{
     constructor() {
-        this.list = [];
-        let roleX = Role.getInstance(RoleTypeDef.X);
-        let roleO = Role.getInstance(RoleTypeDef.O);
-        this.list.push(roleO, roleX);
+        this.roleX = Role.getInstance(RoleTypeDef.X);
+        this.roleO = Role.getInstance(RoleTypeDef.O);
+        this.list = [this.roleO, this.roleX]
+    }
+    reset(){
+        this.list = [this.roleO, this.roleX];
     }
     getCurrRole(){
         return this.list[0]
