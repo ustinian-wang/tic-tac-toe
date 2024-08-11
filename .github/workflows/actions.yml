@@ -2,7 +2,7 @@ name: tic-tac-toe
 on:
     push:
         branches:
-            - demo
+            - main
 permissions:
     contents: write
 jobs:
